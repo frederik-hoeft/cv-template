@@ -10,11 +10,11 @@ A clean, single or double-page CV template written in Markdown with embedded HTM
 
 ## Quick Start
 
-1. Clone the repository and open it in VS Code:
+1. Click the **Use this template** button at the top of the repository page on GitHub, then select **Create a new repository**. Fill in your repository name and clone your new repo locally:
 
    ```sh
-   git clone <repository-url>
-   cd cv-template
+   git clone <your-new-repository-url>
+   cd <your-repo-name>
    code .
    ```
 
