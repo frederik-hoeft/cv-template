@@ -1,0 +1,11 @@
+services:
+  markdown-full:
+    container_name: markdown-full
+    build:
+      context: ..
+      dockerfile: .devcontainer/Dockerfile
+    volumes:
+      - ..:/lab:cached
+    env_file:
+      - .env
+    command: sleep infinity

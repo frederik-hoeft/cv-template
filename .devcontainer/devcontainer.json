@@ -1,0 +1,53 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.194.3/containers/ubuntu
+{
+  "name": "Markdown Enhanced",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "markdown-full",
+  "workspaceFolder": "/lab",
+  "shutdownAction": "stopCompose",
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {
+      "installZsh": true,
+      "configureZshAsDefaultShell": true,
+      "installOhMyZsh": true
+    },
+    "ghcr.io/devcontainers/features/git:1": {},
+    "ghcr.io/devcontainers/features/github-cli:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      // Set *default* container specific settings.json values on container create.
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "zsh",
+        "files.autoSave": "afterDelay",
+        "liveSassCompile.settings.generateMap": false,
+        "liveSassCompile.settings.formats": [
+          {
+            "format": "expanded",
+            "extensionName": ".less",
+            "savePath": null,
+            "savePathReplacementPairs": null
+          }
+        ]
+      },
+
+      // Add the IDs of extensions you want installed when the container is created.
+      "extensions": [
+        "shd101wyy.markdown-preview-enhanced",
+        "glenn2223.live-sass",
+        "github.copilot"
+      ]
+    }
+  },
+  // Use 'forwardPorts' to make a list of ports inside the container available locally.
+  "forwardPorts": [8080],
+
+  // Start a lightweight HTTP server that rewrites file:// paths to CDN URLs.
+  "postStartCommand": {
+    "http-server": "python3 /lab/.devcontainer/serve.py 8080 /lab"
+  },
+
+  // Comment out connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
+  "remoteUser": "dev"
+}
