@@ -2,6 +2,8 @@
 
 A clean, single or double-page CV template written in Markdown with embedded HTML layout, styled with SCSS, and rendered via [Markdown Preview Enhanced](https://shd101wyy.github.io/markdown-preview-enhanced/). Designed to run inside a Dev Container with all tooling pre-configured.
 
+<img src="assets/sample-cv-preview.png" alt="Sample CV Preview" height="600">
+
 ## Prerequisites
 
 - [Docker](https://www.docker.com/get-started) installed and running
