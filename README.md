@@ -20,7 +20,7 @@ A clean, single or double-page CV template written in Markdown with embedded HTM
 
 2. When prompted, select **Reopen in Container** (or run `Dev Containers: Reopen in Container` from the command palette). This builds the container and installs all required extensions automatically.
 
-3. Once the container is running, compile the SCSS stylesheet to LESS. Either:
+3. Once the container is running, compile the SCSS stylesheet to LESS. Open `.crossnote/style.scss` and either:
    - Press `Ctrl+Alt+S` to trigger the Live Sass Compiler manually, or
    - Open the command palette (`F1`) and run **Live Sass: Compile Current File** while `style.scss` is open
 
@@ -32,7 +32,7 @@ A clean, single or double-page CV template written in Markdown with embedded HTM
 
 6. Export the preview to HTML so it can be served in the browser:
    - Right-click the Markdown Preview Enhanced pane
-   - Select **HTML > HTML (cdn hosted)**
+   - Select **Export > HTML > HTML (cdn hosted)**
 
    This generates the HTML file next to the Markdown source with all assets linked to public CDNs. The HTML export is gitignored and must be regenerated after every change.
 

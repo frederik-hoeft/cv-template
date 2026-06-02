@@ -32,7 +32,6 @@ LinkedIn: [jane-doe-example](https://www.linkedin.com/in/jane-doe-example/)
 Sampleville, ST, United States
 - Built and maintained a distributed event ingestion pipeline handling 50k+ events/sec across geographic regions with at-least-once delivery guarantees
 - Architected a multi-tenant feature flagging service with real-time propagation, audit logging, and fine-grained access controls for internal platform teams
-- Designed a schema registry and contract testing framework for asynchronous inter-service communication ensuring backward-compatible message evolution
 - Implemented a custom service mesh sidecar providing transparent mTLS, circuit breaking, retry budgets, and per-route observability for backend services
 - Reduced P99 API latency by 40% through connection pooling redesign, query plan analysis, and introducing read replicas for high-traffic endpoints
 - Established incident response runbooks, SLO dashboards, and on-call tooling that reduced mean time to resolution by 30% across the engineering org
