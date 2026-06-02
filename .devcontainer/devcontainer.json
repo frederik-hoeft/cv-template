@@ -43,9 +43,9 @@
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
   "forwardPorts": [8080],
 
-  // Start a lightweight HTTP server that rewrites file:// paths to CDN URLs.
+  // Start a lightweight HTTP server for previewing the HTML export.
   "postStartCommand": {
-    "http-server": "python3 /lab/.devcontainer/serve.py 8080 /lab"
+    "http-server": "python3 -m http.server 8080 --directory /lab"
   },
 
   // Comment out connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
